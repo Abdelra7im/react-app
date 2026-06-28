@@ -1,0 +1,48 @@
+.Footer {}
+.footerr{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #343a40;
+    
+}
+.footerr > div{
+    display: flex;
+    text-align: center;
+}
+.footerr > div .sid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footerr > div .sid p{
+    line-height: 30px;
+}
+.footerr > div .sid input{
+   padding: 7px 17px;
+   border-radius: 5px;
+border-right: 0;
+}
+.footerr > div .sid button{
+    padding: 7px 17px;
+    background-color: var( --main-color);
+    border-radius: 5px;
+    border-left: 0;
+    transition: 0.5s;
+}
+.footerr > div .sid button:hover{
+    color: #fff;
+}
+.footerr hr{
+    color: #fff;
+    opacity: 100;
+    width: 95%;
+}
+.footerr .bott{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+ font-family: 'tajwal-bold';
+ src: url(./assets/fonts/Tajawal-ExtraBold.ttf) format('woff2');
+}
+@font-face {
+ font-family: 'tajwal-light';
+ src: url(./assets/fonts/Tajawal-Light.ttf) format('woff2');
+}
+@font-face {
+ font-family: 'tajwal-regular';
+ src: url(./assets/fonts/Tajawal-Regular.ttf) format('woff2');
+}
+:root{
+    --main-color: #cece2b;
+    --secondart-color: #3d464d;
+    --tajwal-bold:'tajwal-bold' , sans-serif;
+    --tajwal-light:'tajwal-light' , sans-serif;
+    --tajwal-regular:'tajwal-regular' , sans-serif;
+}
+.dark{
+    --body-bg : #000;
+    --body-color : #fff;
+    --sec-bg : #555;
+}
+body{
+    font-family: var(--tajwal-regular);
+    height: 7000px;
+    
+}
+.icon{
+    font-size: 25px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: scale(1.1);
+}

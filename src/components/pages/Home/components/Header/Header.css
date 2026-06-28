@@ -1,0 +1,62 @@
+/* .Header {} */
+.Header .slider-slick .slider-items{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header .slider-slick .men{
+    height: 50vh;
+    background: linear-gradient(to top , rgba(0,0,0,0.5) , rgba(0,0,0,0.3)), url(../../../../../assets/images/carousel-1-B1coVWNc.jpg);
+}
+.Header .slider-slick .women{
+    height: 50vh;
+    background: linear-gradient(to top , rgba(0,0,0,0.5) , rgba(0,0,0,0.3)), url(../../../../../assets/images/carousel-2--2x9VnkY.jpg);
+}
+.Header .slider-slick .kids{
+    background: linear-gradient(to top ,rgba(0,0,0,0.5) , rgba(0,0,0,0.3)), url(../../../../../assets/images/carousel-3-CkLdEAwA.jpg);
+    height: 50vh;
+}
+.Header .slider-slick .slider-items div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 15px;
+    width: 70%;
+    color: #fff;
+
+}
+.Header .offer{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    gap: 20px;
+}
+.Header .offer > div{
+    height: calc((100% - 20px) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+.Header .offer > div:nth-of-type(2){
+    background: url(../../../../../assets/images/offer-1-DP1lQ_lP.jpg);
+    background-size: cover;
+}
+.Header .offer > div:nth-of-type(1){
+    background: url(../../../../../assets/images/offer-2-Cly2vTNH.jpg);
+    background-size: cover;
+}
+/* .Header .box {
+    background-color: black;
+} */
+.Header .icon{
+    color: var(--main-color);
+}

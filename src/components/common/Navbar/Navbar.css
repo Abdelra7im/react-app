@@ -1,0 +1,75 @@
+.navbar {
+    background-color: var(--secondart-color) !important;
+    color: #fff; 
+}
+.navbar-brand{
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 22px !important;
+}
+.navbar-brand span{
+    color: var(--main-color);
+}
+.nav-link{
+    color: #fff !important;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proccess > div{
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.proccess > div sub{
+    color: #fff;
+}
+.proccess > div:hover{
+    transform: scale(1.1);
+}
+.dropdown-menu{
+    background-color: var(--main-color) !important;
+    padding: 5px !important;
+    
+}
+.auth-process{
+    gap: 30px;
+}
+.auth-process a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    animation: text 1s ease-in-out infinite alternate;
+
+}
+@keyframes text{
+    100%{
+        opacity: 0.5;
+    }
+}
+.auth-process a:hover{
+    animation: none;
+}
+.auth-process a:nth-of-type(2){
+    animation-delay: 1s;
+}
+.auth-process a:nth-of-type(2)::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 50%;
+    background-color: #fff;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: line 1s ease-in-out infinite alternate;
+
+}
+@keyframes line{
+    100%{
+        height: 100%;
+    }
+}
