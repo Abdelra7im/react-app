@@ -12,7 +12,7 @@ import Swal from 'sweetalert2'
 import { applicationModeContext } from './context/ApplicationMode'
 import Register from './components/pages/Home/components/Auth/Register'
 import Login from './components/pages/Home/components/Auth/Login'
-const Layout = lazy(()=> import('./components/layout/layout'))
+const Layout = lazy(()=> import('./components/layout/Layout'))
 
 function App() {
 
