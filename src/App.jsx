@@ -1,6 +1,7 @@
 import React, {useEffect , useState , lazy , Suspense, useContext} from 'react'
 // import React, {lazy} from 'react'
-import {createBrowserRouter , RouterProvider} from 'react-router-dom'
+// import {createBrowserRouter , RouterProvider} from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 // import Layout from './components/layout/layout'
 import Home from './components/pages/Home/Home'
 import About from './components/pages/About/About'
@@ -121,23 +122,22 @@ function App() {
     localStorage.setItem('cartData' , JSON.stringify(cartTitles))
    } , [cartTitles])
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path:'' ,
       element: <Layout cartTitles={cartTitles}/>,
       children:[
-        {index: 'true' , element:<Home  addToCart={addToCart} cartTitles={cartTitles} products={products}/>} ,
+        {index: 'true' , element:<Home addToCart={addToCart} cartTitles={cartTitles} products={products}/>} ,
         {path:'about' ,element:<About />},
         {path:'contact' , element:<Contact />},
         {path:'fakeStoreApi' , element:<FakeApi products={products} cartTitles={cartTitles} addToCart={addToCart}/>} ,
         {path:'fakeStoreApi/products/:id' , element:<FakeApi />} ,
-        {path:'cart' , element:<Cart  deleteProduct={deleteProduct} allData={allData} cartTitles={cartTitles} decreaseProduct={decreaseProduct} inccreaseProduct={inccreaseProduct}/>},
+        {path:'cart' , element:<Cart deleteProduct={deleteProduct} allData={allData} cartTitles={cartTitles} decreaseProduct={decreaseProduct} inccreaseProduct={inccreaseProduct}/>},
         {path:'register' , element:<Register />},
         {path:'login' , element:<Login />},
-        
       ]
-    }])
-  
+    }
+  ]);
 
   return <RouterProvider router={router} />
 }
