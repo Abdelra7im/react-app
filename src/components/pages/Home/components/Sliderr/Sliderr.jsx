@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// استيراد الصور
 import pic1 from '../../../../../assets/images/download.jpeg'
 import pic2 from '../../../../../assets/images/download (1).jpeg'
 import pic3 from '../../../../../assets/images/download (2).jpeg'
@@ -16,25 +15,25 @@ function Sliderr() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // الافتراضي للشاشات الكبيرة
+    slidesToShow: 4, 
     slidesToScroll: 1,
-    autoplay: true, // إضافة ميزة الحركة التلقائية
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1024, // للتابلت
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 3,
         }
       },
       {
-        breakpoint: 768, // للموبايل الكبير
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 480, // للموبايل الصغير
+        breakpoint: 480, 
         settings: {
           slidesToShow: 1,
         }

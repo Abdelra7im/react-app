@@ -12,7 +12,7 @@ function Categorie() {
     <div className='cat container mt-5'>
       <h1 className='mb-5 text-center'>Categories</h1>
       
-      {/* استخدمنا صف واحد (row) عشان يوزع الـ 12 كارت تلقائياً */}
+      
       <div className='row g-3 justify-content-center'>
         {categories.map((img, index) => (
           <div key={index} className='col-6 col-md-4 col-lg-3'>

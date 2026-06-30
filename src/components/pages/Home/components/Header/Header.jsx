@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <div className='Header container mt-5'>
-      {/* الجزء العلوي: السلايدر والعروض */}
+
       <div className='row g-3'>
         <div className='col-12 col-lg-8'>
           <Slider {...settings} className='slider-slick'>
@@ -59,7 +59,7 @@ function Header() {
         </div>
       </div>
 
-      {/* الجزء السفلي: الخدمات */}
+    
       <div className='row mt-5 g-3'>
         <div className='col-6 col-md-3'>
           <div className='p-4 bg-light text-dark d-flex justify-content-center'>

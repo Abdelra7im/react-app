@@ -2,7 +2,6 @@ import React from 'react';
 import './Products.css';
 import { FaStar, FaHeart, FaCartShopping } from "react-icons/fa6";
 
-// استيراد الصور
 import photo1 from '../../../../../assets/images/product-1-Eqx8spQ9.jpg';
 import photo2 from '../../../../../assets/images/product-2-BigTxgyV.jpg';
 import photo3 from '../../../../../assets/images/product-3-FX0nrhtF.jpg';
@@ -13,7 +12,6 @@ import photo7 from '../../../../../assets/images/product-7-DCT2dZdR.jpg';
 import photo9 from '../../../../../assets/images/product-8-DL-K_xhq.jpg';
 
 function Products({ addToCart }) {
-  // مصفوفة البيانات عشان الكود يبقى نظيف
   const products = [
     { id: 1, name: 'Camera', price: 100, oldPrice: 120, img: photo1 },
     { id: 2, name: 'T-Shirt', price: 80, oldPrice: 90, img: photo2 },
