@@ -12,76 +12,77 @@ function Header() {
     slidesToShow: 1,
     slidesToScroll: 1
   };
+
   return (
     <div className='Header container mt-5'>
+      {/* الجزء العلوي: السلايدر والعروض */}
       <div className='row g-3'>
-        <div className='col-8'>
+        <div className='col-12 col-lg-8'>
           <Slider {...settings} className='slider-slick'>
             <div className='men slider-items'>
               <div>
-                <b>Men Fashon</b>
-                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, autem. Recusandae saepe natus, commodi, ad sapiente hic iste ratione nulla, labore excepturi illum tempora modi tenetur eius numquam? Eveniet, libero.</p>
+                <b>Men Fashion</b>
+                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button className='btn border text-light'>Shop Now</button>
               </div>
             </div>
             <div className='women slider-items'>
               <div>
-                <b>Women Fashon</b>
-                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, autem. Recusandae saepe natus, commodi, ad sapiente hic iste ratione nulla, labore excepturi illum tempora modi tenetur eius numquam? Eveniet, libero.</p>
+                <b>Women Fashion</b>
+                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button className='btn border'>Shop Now</button>
               </div>
             </div>
             <div className='kids slider-items'>
               <div>
-                <b>Kids Fashon</b>
-                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, autem. Recusandae saepe natus, commodi, ad sapiente hic iste ratione nulla, labore excepturi illum tempora modi tenetur eius numquam? Eveniet, libero.</p>
+                <b>Kids Fashion</b>
+                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button className='btn border'>Shop Now</button>
               </div>
             </div>
-          </Slider >
+          </Slider>
         </div>
-        <div className='col-4'>
+        
+        <div className='col-12 col-lg-4'>
           <div className='offer'>
             <div>
               <p className='m-0'>Save 20%</p>
-              <p className='m-0'>Spcial Ofeer</p>
+              <p className='m-0'>Special Offer</p>
               <button className='btn border'>Shop Now</button>
             </div>
             <div>
               <p className='m-0'>Save 20%</p>
-              <p className='m-0'>Spcial Ofeer</p>
+              <p className='m-0'>Special Offer</p>
               <button className='btn border'>Shop Now</button>
             </div>
           </div>
         </div>
       </div>
-      <div className='row mt-5 d-flex g-3 '>
-        <div className='col-3'>
-          <div className='p-4 bg-light text-dark d-flex justify-content-center '>
-           
-            <b> <FaCheck className='icon'/>   Quality Product</b>
-          </div>
-        </div>
-        <div className='col-3'>
+
+      {/* الجزء السفلي: الخدمات */}
+      <div className='row mt-5 g-3'>
+        <div className='col-6 col-md-3'>
           <div className='p-4 bg-light text-dark d-flex justify-content-center'>
-           
-            <b> <FaTruck className='icon'/>   Free Shoping</b>
+            <b> <FaCheck className='icon'/> Quality Product</b>
           </div>
         </div>
-        <div className='col-3'>
+        <div className='col-6 col-md-3'>
           <div className='p-4 bg-light text-dark d-flex justify-content-center'>
-            
-            <b> <FaCheck className='icon'/>  14-Day Return</b>
+            <b> <FaTruck className='icon'/> Free Shipping</b>
           </div>
         </div>
-        <div className='col-3'>
+        <div className='col-6 col-md-3'>
+          <div className='p-4 bg-light text-dark d-flex justify-content-center'>
+            <b> <FaCheck className='icon'/> 14-Day Return</b>
+          </div>
+        </div>
+        <div className='col-6 col-md-3'>
           <div className='box p-4 bg-light d-flex justify-content-center'>
-            
-            <b> <FaTruck className='icon'/>    24/7 Support</b>
+            <b> <FaTruck className='icon'/> 24/7 Support</b>
           </div>
         </div>
       </div>
-       </div>
+    </div>
   )
 }
 

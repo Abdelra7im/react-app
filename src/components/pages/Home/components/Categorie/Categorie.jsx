@@ -6,153 +6,29 @@ import img3 from '../../../../../../src/assets/images/cat-3-CeSXsjz-.jpg'
 import img4 from '../../../../../../src/assets/images/cat-4-Df4eiVwg (1).jpg'
 
 function Categorie() {
+  const categories = [img1, img2, img3, img4, img3, img4, img1, img2, img4, img3, img2, img1];
+
   return (
-    <div className='cat container  mt-5 d-flex align-items-center justify-content-center flex-column '>
-       <h1 className='mb-5'>Categorie</h1>
-       <div className='box row shadow m-b-3 g-1 w-100 justify-content-center '>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img1} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
+    <div className='cat container mt-5'>
+      <h1 className='mb-5 text-center'>Categories</h1>
+      
+      {/* استخدمنا صف واحد (row) عشان يوزع الـ 12 كارت تلقائياً */}
+      <div className='row g-3 justify-content-center'>
+        {categories.map((img, index) => (
+          <div key={index} className='col-6 col-md-4 col-lg-3'>
+            <div className='card shadow h-100 p-2'>
+              <div className='content text-dark'>
+                <img src={img} alt="category" className='img-fluid' />
+                <div className='mt-2'>
+                  <b>Category Name</b>
+                  <p className='m-0'>100 Products</p>
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img2} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img3} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img4} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        
-       </div>
-       {/* --------------------الصف الاولللل---------------- */}
-       <div className='box row shadow m-b-3 g-1 w-100 justify-content-center '>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img3} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img4} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img1} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img2} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        
-       </div>
-       {/* ---------------------------الصف التاااانييي------------------- */}
-       <div className='box row shadow m-b-3 g-1 w-100 justify-content-center '>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img4} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img3} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img2} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        <div className='card col-12 col-md-3 '>
-           <div className='content p-1 text-darck'>
-             <div>
-               <img src={img1} alt="" />
-             </div>
-              <div>
-                <b>Category Name</b>
-              <p>100 Products</p>
-              </div>
-          </div>
-        </div>
-        
-       </div>
-       </div>
+        ))}
+      </div>
+    </div>
   )
 }
 

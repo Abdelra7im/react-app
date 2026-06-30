@@ -29,7 +29,9 @@
 }
 body{
     font-family: var(--tajwal-regular);
-    height: 7000px;
+    /* height: 7000px; */
+    min-height: 100vh;
+    margin: 0;
     
 }
 .icon{
